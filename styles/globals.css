@@ -14,3 +14,23 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.flex {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+}
+
+.flex__child {
+  width: 40%;
+  height: 40%;
+}
+
+h1 {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.skeleton {
+  margin-bottom: 10px;
+}

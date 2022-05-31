@@ -1,14 +1,20 @@
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
+import Head from "next/head";
+import React from "react";
+import { Row, Col } from "antd";
+import BodyComponent from "../components/body/BodyComponent";
+import "antd/dist/antd.css";
+import { Provider } from "react-redux";
+import store from "../Redux/redux-store";
 
 const Home = () => {
-  console.log("home");
   return (
-    <div className={styles.container}>
-      <Link href="/videos">
-        <a>Go to videoz</a>
-      </Link>
-    </div>
+    <>
+      <Provider store={store}>
+        <Head>Launches</Head>
+
+        <BodyComponent />
+      </Provider>
+    </>
   );
 };
 
